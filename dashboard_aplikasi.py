@@ -1,3 +1,5 @@
+Username Default: admin
+Password Default: sinergi123
 import streamlit as st
 import pandas as pd
 import re
@@ -144,4 +146,5 @@ else:
 
 # Footer
 st.markdown("---")
+
 st.caption("Dashboard dikembangkan menggunakan native Streamlit charts untuk tampilan yang lebih konsisten.")
