@@ -1,12 +1,11 @@
-Username Default: admin
-Password Default: sinergi123
+
 import streamlit as st
 import pandas as pd
 import re
 
 # Konfigurasi Halaman
 st.set_page_config(
-    page_title="Dashboard STS SINERGI_EID",
+    page_title="Dashboard STS TI",
     page_icon="📶",
     layout="wide"
 )
@@ -47,7 +46,7 @@ def process_data(df):
     return df
 
 # --- UI HEADER ---
-st.title("DASHBOARD STS SINERGI_EID")
+st.title("DASHBOARD STS TI")
 st.markdown("### by ALFISYAHRIN (Streamlit Version)")
 
 # --- SIDEBAR (UPLOAD & FILTERS) ---
@@ -148,3 +147,4 @@ else:
 st.markdown("---")
 
 st.caption("Dashboard dikembangkan menggunakan native Streamlit charts untuk tampilan yang lebih konsisten.")
+
