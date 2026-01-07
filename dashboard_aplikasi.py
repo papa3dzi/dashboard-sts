@@ -1,11 +1,4 @@
-username = input("Username : ")
-password = input("Password : ")
 
-if username == "alfi" and password == "telkominfra" :
-    print("Loging sukses.")
-
-else :
-    print("login gagal bro")
 import streamlit as st
 import pandas as pd
 import re
@@ -154,5 +147,6 @@ else:
 st.markdown("---")
 
 st.caption("Dashboard dikembangkan menggunakan native Streamlit charts untuk tampilan yang lebih konsisten.")
+
 
 
