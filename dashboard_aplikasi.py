@@ -67,7 +67,7 @@ else:
 
     # UI HEADER
     st.title("DASHBOARD STS TI")
-    st.markdown("### by ALFISYAHRIN (Streamlit Version)")
+   
 
     # SIDEBAR (UPLOAD & FILTERS)
     st.sidebar.header("📂 Data & Filter")
@@ -144,3 +144,4 @@ else:
 
     st.markdown("---")
     st.caption("Dashboard STS TI - 2026")
+
