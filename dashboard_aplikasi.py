@@ -107,7 +107,7 @@ else:
                 filtered_df = filtered_df[filtered_df['CELLNAME'].isin(selected_cells)]
 
             # Metrik Analisis
-            st.subheader("⚙️ Pilih Metrik Analisis")
+            st.subheader("⚙️ Pilih KPI Analisis")
             numeric_cols = df.select_dtypes(include=['number', 'float', 'int']).columns.tolist()
             exclude_cols = ['HOURS', 'Sector']
             available_metrics = [c for c in numeric_cols if c not in exclude_cols]
@@ -116,11 +116,11 @@ else:
                 st.warning("Tidak ditemukan kolom numerik.")
                 st.stop()
                 
-            selected_metric = st.selectbox("Metrik di Grafik", options=available_metrics)
+            selected_metric = st.selectbox("KPI di Grafik", options=available_metrics)
 
             # Grafik Per Sektor
             st.divider()
-            st.subheader(f"Grafik Tren: {selected_metric}")
+            st.subheader(f" {selected_metric}")
             sectors = ['1', '2', '3', '4', '5', '6']
             cols = st.columns(2)
             
@@ -144,4 +144,5 @@ else:
 
     st.markdown("---")
     st.caption("Dashboard STS TI - 2026")
+
 
