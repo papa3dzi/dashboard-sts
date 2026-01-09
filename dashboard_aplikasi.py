@@ -120,7 +120,7 @@ else:
 
             # Grafik Per Sektor
             st.divider()
-            st.subheader(f" {selected_metric}")
+            st.subheader(f"Grafik Tren: {selected_metric}")
             sectors = ['1', '2', '3', '4', '5', '6']
             cols = st.columns(2)
             
